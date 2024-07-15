@@ -1,0 +1,97 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main .content {
+    width: 80%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    background-color: #60a8f5;
+    border-radius: 15px;
+}
+
+main .catigory {
+    width: 15%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #60a8f5;
+    border-radius: 15px;
+}
+
+main .content section {
+    width: 350px;
+    /* min-height: 00px; */
+    background-color: white;
+    border-radius: 15px;
+
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+} main .content section .image {
+    width: 100%;
+} main .content section img {
+    width: 100%;
+} main .content section .sect {
+    width: 90%;
+
+    margin: 6px;
+
+    font-size: 18px;
+    text-align: center;
+} main .content section .title {
+    height: 50px;
+    font-size: 24px;
+} main .content section .block {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} main .content section .block > div {
+    margin: 3px;
+} main .content section .link {
+    margin-top: 22px;
+}
+main .content section .link a {
+    color: #60a8f5;
+    font-size: 16px;
+}
+
+main .catigory .title {
+    margin-top: 15px;
+
+    font-size: 18px;
+}
+main .catigory .list {
+    width: 80%;
+    height: 100%;
+
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main .catigory .list a {
+    margin-top: 5px;
+
+    color: black;
+    font-size: 16px;
+}
+main .catigory .list a:hover {
+    color: white;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stat.kz</title>
+
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/myarticles.css">
+
+    <script src="./script/module/module.js" defer></script>
+    <script src="./script/module/db.js" defer></script>
+    <script src="./script/module/token.js" defer></script>
+    <script src="./script/part/header.js" defer></script>
+
+    <script src="./script/page/myarticles.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="./image/logo.png">
+                <span>Stat.kz</span>
+            </div>
+            <nav>
+                <button id="home">Главная</button>
+                <button id="articles">Статьи</button>
+                <button id="myarticles">Мои статьи</button>
+                <button id="login">Войти</button>
+                <button id="logout">Выйти</button>
+            </nav>
+        </header>
+        <main>
+            <table id="tableArticles">
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>text</th>
+                    <th>date</th>
+                    <th>category</th>
+                    <th><button id="btnCreate"><img src="./image/icon/plus.png"></button></th>
+                </tr>
+            </table>
+            <modal id="modalTint"></modal>
+            <modal class="modal" id="modalCreate">
+                <div class="modal-title">Создать Статью</div>
+                <hr>
+
+                <section>
+                    <div class="title">Заголовок</div>
+                    <div class="input">
+                        <textarea class="input-title"></textarea>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="title">Текст</div>
+                    <div class="input">
+                        <textarea class="input-text"></textarea>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="title">Катигория</div>
+                    <div class="input">
+                        <select class="input-category"></select>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="btn-box">
+                        <button id="modal-btn-create">Создать</button>
+                        <button class="modal-btn-cancel">Отмена</button>
+                    </div>
+                </section>
+            </modal>
+
+            <modal class="modal" id="modalEdit">
+                <div class="modal-title">Изменить Статью №</div>
+                <hr>
+
+                <section>
+                    <div class="title">Заголовок</div>
+                    <div class="input">
+                        <textarea class="input-title"></textarea>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="title">Текст</div>
+                    <div class="input">
+                        <textarea class="input-text"></textarea>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="title">Катигория</div>
+                    <div class="input">
+                        <select class="input-category"></select>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="btn-box">
+                        <button id="modal-btn-edit">Изменить</button>
+                        <button class="modal-btn-cancel">cancel</button>
+                    </div>
+                </section>
+            </modal>
+
+            <modal class="modal" id="modalDelete">
+                <div class="modal-title">Удалить Статью №</div>
+                <hr>
+
+                <section>
+                    <div class="btn-box">
+                        <button id="modal-btn-delete">Удалить</button>
+                        <button class="modal-btn-cancel">Отмена</button>
+                    </div>
+                </section>
+            </modal>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+main section {
+    width: 80%;
+    min-height: 500px;
+
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #60a8f5;
+    border-radius: 15px;
+}
+
+main section #title {
+    color: white;
+    font-size: 38px;
+} main section .img {
+    width: 80%;
+    max-height: 700px;
+
+    margin: 20px 0px 20px 0px;
+
+    border-radius: 15px;
+    overflow: hidden;
+} main section .img img {
+    width: 100%;
+} main section .block {
+    width: 80%;
+    font-size: 18px;
+} main section #text {
+    width: 80%;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+    text-indent: 20px;
+} main section .link {
+    width: 80%;
+} main section .link #back {
+    font-size: 16px;
+
+    text-decoration-line: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+} main section .link #back:hover {
+    color: white;
+}

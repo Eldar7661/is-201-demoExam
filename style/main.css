@@ -1,0 +1,26 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+
+    --main-width: 90vw;
+}
+
+.wrapper {
+    width: var(--main-width);
+    min-height: 980px;
+    background-color: white;
+
+    margin: auto;
+    position: relative;
+
+    padding-top: 80px;
+}
+main {
+    width: 100%;
+    min-height: 300px;
+
+    margin-top: 40px;
+}
+/* #FF8300	#BF7930	#A65500	#FFA240	#FFBB73
+#06799F	#216278	#024E68	#3AAACF	#61B4CF */
